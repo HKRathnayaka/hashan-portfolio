@@ -6,20 +6,20 @@
 }
 
 body {
-    background-color: #f5f7fa;
+    background: #f4f6f9;
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #0a2540;
-    color: white;
-    padding: 40px 20px;
+    background: linear-gradient(135deg, #0a2540, #123a63);
+    color: #fff;
     text-align: center;
+    padding: 60px 20px;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 40px;
 }
 
 header p {
@@ -27,34 +27,65 @@ header p {
     font-size: 18px;
 }
 
-header .links a {
-    color: #00c2ff;
-    margin: 0 10px;
+.cta-buttons {
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
 }
 
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-h2 {
-    margin-bottom: 20px;
+.primary {
+    background: #00c2ff;
     color: #0a2540;
 }
 
-.skill-group {
-    margin-bottom: 15px;
+.secondary {
+    border: 2px solid #00c2ff;
+    color: #00c2ff;
 }
 
-.job {
-    margin-bottom: 30px;
+.links a {
+    margin: 0 10px;
+    color: #aadfff;
+    text-decoration: none;
 }
 
-.job h3 {
-    color: #1a1a1a;
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    color: #0a2540;
+    margin-bottom: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.project, .job {
+    background: #fff;
+    padding: 25px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .job span {
@@ -62,15 +93,14 @@ h2 {
     color: #666;
 }
 
-.job ul {
+ul {
     margin-top: 10px;
     padding-left: 20px;
 }
 
 footer {
-    background-color: #0a2540;
-    color: white;
+    background: #0a2540;
+    color: #fff;
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+    padding: 20px;
 }
